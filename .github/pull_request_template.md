@@ -11,5 +11,5 @@ Resolves <!-- Issue number(s) in the form #1 or org/repo#1 -->
 - [ ] I have reviewed my pull request
 - [ ] I have added any relevant tests
 
-## Relevant example
+## Demonstration
 <!-- If applicable, attach screenshot or terminal output of working code -->
