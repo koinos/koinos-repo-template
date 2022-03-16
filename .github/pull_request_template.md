@@ -1,6 +1,9 @@
-Resolves: 
+Resolves <!-- Issue number(s) in the form #1 or org/repo#1 -->
 
----
+## Brief description
+<!-- Add a brief summary of the code changes in the pull request -->
+
+## Checklist
 
 - [ ] I have built this pull request locally
 - [ ] I have ran the unit tests locally
@@ -8,6 +11,5 @@ Resolves:
 - [ ] I have reviewed my pull request
 - [ ] I have added any relevant tests
 
----
-
-If applicable, attach screenshot or terminal output of working code:
+## Relevant example
+<!-- If applicable, attach screenshot or terminal output of working code -->
