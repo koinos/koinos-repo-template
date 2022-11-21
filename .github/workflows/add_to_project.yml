@@ -6,12 +6,12 @@ on:
   pull_request:
     types: [opened]
 env:
-  GITHUB_TOKEN: ${{ secrets.ISSUE_MANAGEMENT_TOKEN }}
+  MY_GITHUB_TOKEN: ${{ secrets.ISSUE_MANAGEMENT_TOKEN }}
 
 jobs:
   assign_to_project:
     runs-on: ubuntu-latest
-    name: Assign pull requests to project
+    name: Assign issue/pull request to project
     steps:
     - name: Assign new pull requests
       uses: srggrs/assign-one-project-github-action@1.2.1
