@@ -5,11 +5,9 @@ on:
     types: [opened]
   pull_request:
     types: [opened]
-env:
-  MY_GITHUB_TOKEN: ${{ secrets.ISSUE_MANAGEMENT_TOKEN }}
 
 jobs:
   assign_to_project:
     uses: koinos/koinos-github-workflows/.github/workflows/add_to_project.yml@master
-    secrets:
+    with:
       github-token: ${{ secrets.ISSUE_MANAGEMENT_TOKEN }}
