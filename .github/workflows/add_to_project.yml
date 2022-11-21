@@ -10,21 +10,6 @@ env:
 
 jobs:
   assign_to_project:
-    runs-on: ubuntu-latest
-    name: Assign issue/pull request to project
-    steps:
-    - name: Assign new pull requests
-      uses: srggrs/assign-one-project-github-action@1.2.1
-      if: github.event.name == 'pull_request'
-      with:
-        project: 'https://github.com/orgs/koinos/projects/6'
-        column_name: 'In Review'
-
-    - name: Assign issues with `bug` or `enhancement` label to project
-      uses: srggrs/assign-one-project-github-action@1.2.1
-      if: |
-        contains(github.event.issue.labels.*.name, 'bug') ||
-        contains(github.event.issue.labels.*.name, 'enhancement')
-      with:
-        project: 'https://github.com/orgs/koinos/projects/6'
-        column_name: 'Awaiting Triage'
+    uses: koinos/koinos-github-workflows/.github/workflows/add_to_project.yml@master
+    secrets:
+      github-token: ${{ secrets.ISSUE_MANAGEMENT_TOKEN }}
